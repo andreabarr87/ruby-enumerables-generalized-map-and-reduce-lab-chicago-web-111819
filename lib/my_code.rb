@@ -8,17 +8,7 @@ def map(array)
   new_array
 end
 
-def reduce(array, start = 0)
-  if array.include?(String)
-    yield(array)
-  else
-  counter = 0
-  while counter < array.length do
-      total = yield(total, start)
-      total += array[counter]
-    end
-  end
-end
+def reduce(array, start = nil)
 
       
 
