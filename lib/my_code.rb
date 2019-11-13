@@ -8,7 +8,7 @@ def map(array)
   new_array
 end
 
-
+def reduce(array, start)
 
 #def reduce(array, start = nil)
 #  if start
@@ -21,9 +21,9 @@ end
   #  total = yield(total, array[counter])
    # counter += 1
     #total
-  end
-  total
-end
+  #end
+#  total
+#end
     
 
 
