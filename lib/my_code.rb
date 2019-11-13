@@ -12,6 +12,8 @@ def reduce(array, start = nil)
   if start
     acc = start
     counter = 0
+  else
+    acc = array[0]
 
       
 
