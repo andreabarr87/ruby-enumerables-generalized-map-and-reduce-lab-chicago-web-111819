@@ -18,7 +18,7 @@ def reduce(array, start = nil)
   end
   
   while counter < array.length
-    yield(acc, array[counter])
+    acc = yield(acc, array[counter])
       
 
 #def reduce(array, start = nil)
