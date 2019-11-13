@@ -9,7 +9,7 @@ def map(array)
 end
 
 def reduce(array, start = 0)
-  if array.include?(!String)
+  if array.include?(String)
   counter = 0
   while counter < array.length do
       total = yield(total, start)
