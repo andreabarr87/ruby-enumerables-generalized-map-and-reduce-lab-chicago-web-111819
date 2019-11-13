@@ -10,13 +10,13 @@ end
 
 def reduce(array, start = 0)
   if array.include?(String)
+    yield(array)
+  else
   counter = 0
   while counter < array.length do
       total = yield(total, start)
       total += array[counter]
     end
-  else
-    yield(array)
   end
 end
 
