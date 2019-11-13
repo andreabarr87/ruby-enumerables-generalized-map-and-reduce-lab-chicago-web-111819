@@ -8,10 +8,11 @@ def map(array)
   new_array
 end
 
-def reduce(array, start)
+def reduce(array, start = nil)
+  if array.include?(Integer)
   counter = 0
   while counter < array.length do
-      
+      yeild(total, array[counter])
 
 #def reduce(array, start = nil)
 #  if start
@@ -23,7 +24,6 @@ def reduce(array, start)
  # while counter < array.length do
   #  total = yield(total, array[counter])
    # counter += 1
-    #total
   #end
 #  total
 #end
