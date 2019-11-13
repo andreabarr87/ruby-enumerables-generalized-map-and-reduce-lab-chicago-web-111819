@@ -15,7 +15,9 @@ def reduce(array, start = nil)
   else
     acc = array[0]
     counter = 0
+  end
   
+  while counter < array.length
       
 
 #def reduce(array, start = nil)
