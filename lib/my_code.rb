@@ -9,6 +9,7 @@ def map(array)
 end
 
 
+
 def reduce(array, start = nil)
   if start
     total = start 
