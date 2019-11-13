@@ -12,7 +12,14 @@ def reduce(array, start = nil)
   if array.include?(Integer)
   counter = 0
   while counter < array.length do
-      yeild(total, array[counter])
+      total = start + yield(total, array[counter])
+    end
+  else
+    yield(array)
+  end
+end
+
+      
 
 #def reduce(array, start = nil)
 #  if start
